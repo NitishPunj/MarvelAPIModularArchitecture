@@ -15,6 +15,7 @@
 		EF457F42270B9851006C2765 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF457F40270B9851006C2765 /* CharacterDetailViewController.swift */; };
 		EF457F43270B9851006C2765 /* CharacterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF457F41270B9851006C2765 /* CharacterDetailViewController.xib */; };
 		EF457F45270B9BFC006C2765 /* CharacterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF457F44270B9BFC006C2765 /* CharacterViewModelTests.swift */; };
+		EF457F48270BAAD8006C2765 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF457F47270BAAD8006C2765 /* UIImageView+Extensions.swift */; };
 		EF54CDA1270B7D670075FFDB /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF54CDA0270B7D670075FFDB /* AppManager.swift */; };
 		EF54CDA3270B7DB60075FFDB /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF54CDA2270B7DB60075FFDB /* AppCoordinator.swift */; };
 		EF54CDA8270B7E420075FFDB /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF54CDA6270B7E420075FFDB /* CharactersViewModel.swift */; };
@@ -53,6 +54,7 @@
 		EF457F40270B9851006C2765 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		EF457F41270B9851006C2765 /* CharacterDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailViewController.xib; sourceTree = "<group>"; };
 		EF457F44270B9BFC006C2765 /* CharacterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModelTests.swift; sourceTree = "<group>"; };
+		EF457F47270BAAD8006C2765 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		EF54CDA0270B7D670075FFDB /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		EF54CDA2270B7DB60075FFDB /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		EF54CDA6270B7E420075FFDB /* CharactersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
@@ -121,6 +123,14 @@
 			path = CharactetDetail;
 			sourceTree = "<group>";
 		};
+		EF457F46270BAAA6006C2765 /* Utilitis */ = {
+			isa = PBXGroup;
+			children = (
+				EF457F47270BAAD8006C2765 /* UIImageView+Extensions.swift */,
+			);
+			path = Utilitis;
+			sourceTree = "<group>";
+		};
 		EF54CD9F270B7D490075FFDB /* AppCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				EF54CD9F270B7D490075FFDB /* AppCore */,
+				EF457F46270BAAA6006C2765 /* Utilitis */,
 				EF54CDA4270B7E040075FFDB /* Features */,
 				EFA43646270A0F7500D263D4 /* Main.storyboard */,
 				EFA43649270A0F7800D263D4 /* Assets.xcassets */,
@@ -344,6 +355,7 @@
 				EF54CDA8270B7E420075FFDB /* CharactersViewModel.swift in Sources */,
 				EFA43641270A0F7500D263D4 /* AppDelegate.swift in Sources */,
 				EF457F2F270B88C9006C2765 /* CharactersViewController.swift in Sources */,
+				EF457F48270BAAD8006C2765 /* UIImageView+Extensions.swift in Sources */,
 				EF54CDA3270B7DB60075FFDB /* AppCoordinator.swift in Sources */,
 				EFA43643270A0F7500D263D4 /* SceneDelegate.swift in Sources */,
 				EF457F42270B9851006C2765 /* CharacterDetailViewController.swift in Sources */,

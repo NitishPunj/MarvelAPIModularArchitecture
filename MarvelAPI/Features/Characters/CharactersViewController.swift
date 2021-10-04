@@ -79,20 +79,7 @@ extension CharactersViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterTableViewCell", for: indexPath) as? CharacterTableViewCell else {
             return .init()}
         
-        let cellViewModel = viewModel.characters[indexPath.row]
-        cell.nameLabel.text = cellViewModel.name
-        if let imageURL = cellViewModel.imageURL {
-//            ImageDownloader.shared.loadImage(from: imageURL, completion: { [weak self] result in
-//                DispatchQueue.main.async {
-//                    switch result {
-//                    case .success(let image):
-//                        cell.logoImage.image = image
-//                    case .failure(_):
-//                        break
-//                    }
-//                }
-//            })
-        }
+        cell.viewModel = viewModel.characters[indexPath.row]
         return cell
     }
 }

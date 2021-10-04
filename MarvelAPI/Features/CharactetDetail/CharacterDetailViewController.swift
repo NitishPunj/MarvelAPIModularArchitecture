@@ -16,7 +16,7 @@ final class CharacterDetailViewController: UIViewController {
     
     private let viewModel: MarvelCharacter
     
-    
+
     /// Initializer Injection
     init(viewModel: MarvelCharacter) {
         self.viewModel = viewModel
@@ -33,6 +33,10 @@ final class CharacterDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        title = viewModel.name
         descriptionLabel.text = viewModel.description
+        if let imageURL = viewModel.imageURL {
+            image.loadImageUsingCache(withUrl: imageURL)
+        }
     }
 }

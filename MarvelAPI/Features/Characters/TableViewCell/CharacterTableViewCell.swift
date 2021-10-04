@@ -6,10 +6,20 @@
 //
 
 import UIKit
+import MarvelAPIService
 
 final class CharacterTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var logoImage: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet private weak var logoImage: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    
+    var viewModel: MarvelCharacter? {
+        didSet {
+            nameLabel.text = viewModel?.name
+            if let imageURL = viewModel?.imageURL {
+                logoImage.loadImageUsingCache(withUrl: imageURL)
+            }
+        }
+    }
 }
 
