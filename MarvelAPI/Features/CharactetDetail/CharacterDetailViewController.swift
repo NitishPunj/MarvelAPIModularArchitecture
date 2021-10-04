@@ -33,9 +33,6 @@ final class CharacterDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         descriptionLabel.text = viewModel.description
-        
     }
-
 }
