@@ -17,3 +17,6 @@ Classes can be tested in isolation as I am using inversion of control using depe
 3. Add WKWeb Views and improve UI
 
 
+## Buiild Notes
+Build with Xcode: Version 13 
+Target Device: iOS
